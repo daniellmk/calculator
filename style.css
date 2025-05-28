@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calcCont {
+    grid-gap: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "disp disp disp disp"
+        "nPad nPad nPad oPad"
+        "nPad nPad nPad oPad"
+        "nPad nPad nPad oPad"
+        "nPad nPad nPad oPad"
+    ;
+}
+#display {
+    border: 1px, solid, black;
+    grid-area: disp;
+}
+#numPad {
+    grid-gap: 5px;
+    display: grid;
+    grid-area: nPad;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "one two three"
+        "four five six"
+        "seven eight nine"
+        "ac zero deci"
+    ;
+}
+#opPad {
+    grid-gap: 5px;
+    display: grid;
+    grid-area: oPad;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "add"
+        "sub"
+        "mult"
+        "divi"
+    ;
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#zero {
+    grid-area: zero;
+}
+#ac {
+    grid-area: ac;
+}
+#decimal {
+    grid-area: deci;
+}
+#add {
+    grid-area: add;
+}
+#sub {
+    grid-area: sub;
+}
+#multiply {
+    grid-area: mult;
+}
+#divide {
+    grid-area: divi;
+}
+
+
+
+
+
+
