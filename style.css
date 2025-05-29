@@ -9,6 +9,8 @@ body {
     align-items: center;
 }
 #calcCont {
+    width: 300px;
+    height: 425px;
     grid-gap: 10px;
     border: 1px solid black;
     padding: 10px;
