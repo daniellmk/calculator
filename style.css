@@ -1,3 +1,10 @@
+* {
+    background-color: #8EA58C;
+    color: #dff3da;
+        font-weight: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -5,15 +12,15 @@ html, body {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 #calcCont {
-    width: 300px;
-    height: 425px;
-    grid-gap: 10px;
-    border: 1px solid black;
-    padding: 10px;
+    width: 350px;
+    height: 500px;
+    grid-gap: 20px;
+    padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -24,13 +31,23 @@ body {
         "nPad nPad nPad oPad"
         "nPad nPad nPad oPad"
     ;
+    border-radius: 30px;
+    background: #8EA58C;
+    box-shadow:  35px 35px 70px #798c77,
+             -35px -35px 70px #a3bea1;
 }
 #display {
-    border: 1px, solid, black;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: end;
     grid-area: disp;
+    border-radius: 25px;
+    box-shadow: inset  30px  30px 60px #798c77,
+                inset -30px -30px 60px #a3bea1;
 }
 #numPad {
-    grid-gap: 5px;
+    grid-gap: 17px;
     display: grid;
     grid-area: nPad;
     grid-template-columns: 1fr 1fr 1fr;
@@ -39,11 +56,11 @@ body {
         "one two three"
         "four five six"
         "seven eight nine"
-        "ac zero deci"
+        "ac zero equal"
     ;
 }
 #opPad {
-    grid-gap: 5px;
+    grid-gap: 20px;
     display: grid;
     grid-area: oPad;
     grid-template-columns: 1fr;
@@ -54,6 +71,23 @@ body {
         "mult"
         "divi"
     ;
+}
+button {
+    font-size: 20px;
+    border: 0px;
+    border-radius: 17px;
+    background: #8EA58C;
+    box-shadow:  5px 5px 8px #859b84,
+             -5px -5px 8px #97af94;
+}
+#dModeCont {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#darkMode {
+    padding: 5px;
+    margin: 30px;
 }
 #one {
     grid-area: one;
@@ -88,8 +122,8 @@ body {
 #ac {
     grid-area: ac;
 }
-#decimal {
-    grid-area: deci;
+#equal {
+    grid-area: equal;
 }
 #add {
     grid-area: add;
