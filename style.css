@@ -43,8 +43,8 @@ body {
     text-align: end;
     grid-area: disp;
     border-radius: 25px;
-    box-shadow: inset  30px  30px 60px #798c77,
-                inset -30px -30px 60px #a3bea1;
+    box-shadow: inset  15px  15px 30px #798c77,
+                inset -15px -15px 30px #a3bea1;
 }
 #numPad {
     grid-gap: 17px;
@@ -82,12 +82,18 @@ button {
 }
 #dModeCont {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 20px;
+    right: 20px;
+}
+img {
+    background-color: #687e65;
 }
 #darkMode {
-    padding: 5px;
-    margin: 30px;
+    background-color: #687e65;
+    padding: 12px;
+    border-radius: 9px;
+box-shadow:  5px 5px 12px #5d705a,
+             -5px -5px 12px #738c70;
 }
 #one {
     grid-area: one;
