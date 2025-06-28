@@ -12,26 +12,26 @@
         <button id="darkMode" onclick="toggleDrkMode()"><img src="imgs/moon.png" width="20px"/></button>
     </div>
     <div id="calcCont">
-        <div id="display">1+1</div>
+        <div id="display"></div>
         <div id="numPad">
-            <button id="one" value="1">1</button>
-            <button id="two" value="2">2</button>
-            <button id="three" value="3">3</button>
-            <button id="four" value="4">4</button>
-            <button id="five" value="5">5</button>
-            <button id="six" value="6">6</button>
-            <button id="seven" value="7">7</button>
-            <button id="eight" value="8">8</button>
-            <button id="nine" value="9">9</button>
-            <button id="ac">AC</button>
-            <button id="zero" value="0">0</button>
-            <button id="equal" value="equal">=</button>
+            <button id="one" value="1" onclick="update(this.value)">1</button>
+            <button id="two" value="2" onclick="update(this.value)">2</button>
+            <button id="three" value="3" onclick="update(this.value)">3</button>
+            <button id="four" value="4" onclick="update(this.value)">4</button>
+            <button id="five" value="5" onclick="update(this.value)">5</button>
+            <button id="six" value="6" onclick="update(this.value)">6</button>
+            <button id="seven" value="7" onclick="update(this.value)">7</button>
+            <button id="eight" value="8" onclick="update(this.value)">8</button>
+            <button id="nine" value="9" onclick="update(this.value)">9</button>
+            <button id="ac" onclick="clearDisplay()">AC</button>
+            <button id="zero" value="0" onclick="update(this.value)">0</button>
+            <button id="equal" value="equal" onclick="operateNums()">=</button>
         </div>
         <div id="opPad">
-            <button id="add" value="add">+</button>
-            <button id="subtract" value="subtract">-</button>
-            <button id="multiply" value="multiply">&times;</button>
-            <button id="divide" value="divide">÷</button>
+            <button id="add" value="+" onclick="updateOp(this.value)">+</button>
+            <button id="subtract" value="-" onclick="updateOp(this.value)">-</button>
+            <button id="multiply" value="×" onclick="updateOp(this.value)">&times;</button>
+            <button id="divide" value="÷" onclick="updateOp(this.value)">÷</button>
         </div>
     </div>
     <script src="script.js"></script>
